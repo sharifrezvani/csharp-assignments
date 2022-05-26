@@ -7,8 +7,8 @@ namespace SecondAssignment
         static void Main(string[] args)
         {
 
-            Console.Write("Determine the number of rows for the pyramid (1-9): ");
-            int rows = Convert.ToInt32(Console.ReadLine());
+            int rows = 5;
+            
             for (int i = 0; i <= rows; i++)
             {
 
