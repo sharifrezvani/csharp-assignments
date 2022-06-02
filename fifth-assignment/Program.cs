@@ -9,7 +9,7 @@ namespace FifthAssignment
         {
 
 
-            List<string> reoccurrences = new List<string>();
+            int timesOccurred = 0;
 
             string givenNumberString;
 
@@ -34,12 +34,12 @@ namespace FifthAssignment
             {
                 if (givenNumberString.Substring(i,1) == givenDigitString)
                 {
-                    reoccurrences.Add(givenDigitString);
+                    timesOccurred++;
                 }
             }
 
 
-            Console.WriteLine($"\nThe given digit occurs {reoccurrences.Count} time/times in the given number.");
+            Console.WriteLine($"\nThe given digit occurs {timesOccurred} time/times in the given number.");
             
 
         }
