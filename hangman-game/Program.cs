@@ -171,6 +171,7 @@ namespace HangManGame
                     if (correctGuessList.Count == randomWord.Length)
                     {
                         Console.WriteLine("Congrats, you won!");
+                        
                     }
                     else if (wrongAttempts == 6)
                     {
