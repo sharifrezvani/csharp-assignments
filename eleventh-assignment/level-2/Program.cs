@@ -69,6 +69,26 @@ ______|______|______
             }
 
         }
+        static public bool LookForDraw(List<string> choicesList)
+        {
+            int intCounter = 0;
+            foreach (var item in choicesList)
+            {
+                if (item != "X" && item != "O")
+                {
+                    intCounter++;
+                }
+            }
+
+            if (intCounter == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         static void Main(string[] args)
         {
 
@@ -165,6 +185,10 @@ ______|______|______
 
                     break;
 
+                }
+                else if (LookForDraw(choiceList))
+                {
+                    Console.WriteLine($"It's a draw!");
                 }
 
             }
