@@ -52,7 +52,7 @@ namespace API.Controllers
 
         [HttpPost("ChangePhoneNumber")]
 
-        public async Task<ActionResult<User>> ChangeBirthday(PhoneNumberDTO phoneNumberDTO)
+        public async Task<ActionResult<User>> ChangePhoneNumber(PhoneNumberDTO phoneNumberDTO)
         {
 
             if (!await Exists(phoneNumberDTO.ID))
